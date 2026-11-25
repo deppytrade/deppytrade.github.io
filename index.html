@@ -1,0 +1,1416 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>内内植入害羞草_害羞草短剧与植入广告合集_内内植入害羞草更新与解析</title>
+<meta name="description" content="内内植入害羞草是聚焦“内内”短剧系列中害羞草植入门道的内容站，收录分集条目、植入位置拆解、演员与拍摄花絮、社区讨论，适合追剧党与广告创意爱好者对照查看。">
+<meta name="keywords" content="害羞草短剧,植入广告拆解,内内系列分集,短剧广告创意,害羞草角色分析">
+<style>
+:root{
+  --green-900:#123b2a;
+  --green-700:#1d5c40;
+  --green-500:#2f8a5f;
+  --green-300:#7fc9a3;
+  --green-100:#e6f4ec;
+  --leaf:#a8d94a;
+  --clay:#c96f4a;
+  --ink:#1b211e;
+  --ink-2:#3f4a45;
+  --ink-3:#6b7873;
+  --line:#d9e4dd;
+  --bg:#f6faf7;
+  --panel:#ffffff;
+  --radius:14px;
+  --radius-sm:8px;
+  --shadow:0 1px 2px rgba(18,59,42,.06),0 8px 24px rgba(18,59,42,.07);
+  --shadow-sm:0 1px 2px rgba(18,59,42,.08);
+  --max:1320px;
+  --stick:104px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,"Segoe UI",sans-serif;
+  font-size:15px;
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none}
+a:hover{color:var(--green-700)}
+h1,h2,h3,h4{margin:0;line-height:1.35;font-weight:700;letter-spacing:.2px}
+p{margin:0 0 12px}
+ul,ol{margin:0 0 12px;padding-left:20px}
+li{margin-bottom:6px}
+img{max-width:100%;display:block}
+button{font:inherit;cursor:pointer}
+:focus-visible{outline:3px solid var(--leaf);outline-offset:2px;border-radius:4px}
+
+/* ============ 吸顶公告条 ============ */
+.notice{
+  position:sticky;top:0;z-index:60;
+  background:var(--green-900);
+  color:#eaf6ee;
+  font-size:13px;
+}
+.notice-inner{
+  max-width:var(--max);margin:0 auto;padding:8px 20px;
+  display:flex;align-items:center;gap:12px;flex-wrap:wrap;
+}
+.notice .tag{
+  background:var(--leaf);color:var(--green-900);
+  font-weight:700;font-size:12px;padding:1px 8px;border-radius:999px;
+  flex:none;
+}
+.notice .items{display:flex;gap:18px;flex-wrap:wrap;overflow:hidden}
+.notice .items span{white-space:nowrap}
+.notice .items b{color:#fff;font-weight:600}
+
+/* ============ 页头 ============ */
+.header{
+  position:sticky;top:33px;z-index:50;
+  background:rgba(255,255,255,.94);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.header-inner{
+  max-width:var(--max);margin:0 auto;padding:12px 20px;
+  display:flex;align-items:center;gap:22px;
+}
+.brand{display:flex;align-items:center;gap:10px;flex:none}
+.brand-mark{width:38px;height:38px;flex:none}
+.brand-text{display:flex;flex-direction:column;line-height:1.2}
+.brand-text strong{font-size:17px;letter-spacing:.5px;color:var(--green-900)}
+.brand-text small{font-size:11px;color:var(--ink-3);letter-spacing:1.5px}
+.nav{display:flex;gap:4px;flex-wrap:wrap;margin-left:8px}
+.nav a{
+  font-size:14px;color:var(--ink-2);padding:6px 11px;border-radius:999px;
+  transition:background .15s,color .15s;
+}
+.nav a:hover,.nav a.active{background:var(--green-100);color:var(--green-700)}
+.header-actions{margin-left:auto;display:flex;align-items:center;gap:10px}
+.search{position:relative;display:flex;align-items:center}
+.search input{
+  width:180px;padding:7px 12px;border:1px solid var(--line);border-radius:999px;
+  font-size:13px;background:#fbfdfb;color:var(--ink);transition:width .2s,border-color .2s;
+}
+.search input:focus{width:230px;border-color:var(--green-300);outline:none;box-shadow:0 0 0 3px rgba(127,201,163,.25)}
+.btn-ghost{
+  border:1px solid var(--green-300);color:var(--green-700);background:#fff;
+  padding:6px 14px;border-radius:999px;font-size:13px;font-weight:600;
+}
+.btn-ghost:hover{background:var(--green-100)}
+.btn-solid{
+  border:1px solid var(--green-700);background:var(--green-700);color:#fff;
+  padding:6px 16px;border-radius:999px;font-size:13px;font-weight:600;
+}
+.btn-solid:hover{background:var(--green-900)}
+.menu-toggle{display:none}
+
+/* ============ 首屏 ============ */
+.hero{
+  position:relative;overflow:hidden;
+  background:
+    radial-gradient(1100px 420px at 82% -10%,rgba(168,217,74,.20),transparent 62%),
+    radial-gradient(760px 380px at 8% 110%,rgba(127,201,163,.28),transparent 60%),
+    linear-gradient(180deg,#ffffff,#f2f9f4);
+  border-bottom:1px solid var(--line);
+}
+.hero-inner{
+  max-width:var(--max);margin:0 auto;padding:46px 20px 40px;
+  display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:38px;align-items:center;
+}
+.hero-kicker{
+  display:inline-flex;align-items:center;gap:8px;
+  background:var(--green-100);color:var(--green-700);
+  font-size:12px;font-weight:700;letter-spacing:1px;
+  padding:4px 12px;border-radius:999px;margin-bottom:16px;
+}
+.hero h1{
+  font-size:clamp(30px,4.2vw,50px);
+  color:var(--green-900);
+  letter-spacing:2px;
+  margin-bottom:16px;
+}
+.hero h1 .hl{
+  background:linear-gradient(180deg,transparent 62%,rgba(168,217,74,.55) 62%);
+  padding:0 2px;
+}
+.hero-lead{font-size:16px;color:var(--ink-2);max-width:560px;margin-bottom:18px}
+.hero-lead b{color:var(--green-700)}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:22px}
+.hero-actions .btn-solid,.hero-actions .btn-ghost{padding:10px 22px;font-size:14px}
+.hero-stats{display:flex;gap:28px;flex-wrap:wrap}
+.hero-stats div{display:flex;flex-direction:column}
+.hero-stats strong{font-size:22px;color:var(--green-700);font-variant-numeric:tabular-nums}
+.hero-stats span{font-size:12px;color:var(--ink-3);letter-spacing:.5px}
+
+.hero-art{position:relative}
+.hero-art svg{width:100%;height:auto;display:block;filter:drop-shadow(0 14px 30px rgba(18,59,42,.14))}
+.hero-badge{
+  position:absolute;right:-6px;bottom:2px;
+  background:#fff;border:1px solid var(--line);border-radius:12px;
+  box-shadow:var(--shadow);padding:10px 14px;font-size:12px;color:var(--ink-2);
+  display:flex;align-items:center;gap:8px;
+}
+.hero-badge i{width:8px;height:8px;border-radius:50%;background:var(--leaf);display:inline-block;box-shadow:0 0 0 4px rgba(168,217,74,.24)}
+
+/* ============ 三栏门户 ============ */
+.layout{
+  max-width:var(--max);margin:0 auto;padding:34px 20px 60px;
+  display:grid;grid-template-columns:180px minmax(0,1fr) 268px;gap:30px;align-items:start;
+}
+.channel-rail{
+  position:sticky;top:calc(33px + 62px + 16px);
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  padding:14px 12px;box-shadow:var(--shadow-sm);
+}
+.rail-title{font-size:12px;letter-spacing:2px;color:var(--ink-3);font-weight:700;margin:2px 6px 10px}
+.channel-rail a{
+  display:flex;align-items:center;justify-content:space-between;gap:6px;
+  padding:8px 10px;border-radius:var(--radius-sm);font-size:14px;color:var(--ink-2);
+  transition:background .15s,color .15s;
+}
+.channel-rail a em{font-style:normal;font-size:11px;color:var(--ink-3);font-variant-numeric:tabular-nums}
+.channel-rail a:hover,.channel-rail a.on{background:var(--green-100);color:var(--green-700)}
+.channel-rail a.on em{color:var(--green-500)}
+
+.main-col{min-width:0}
+.side-col{min-width:0;display:flex;flex-direction:column;gap:20px}
+
+/* 板块通用 */
+.section{margin-bottom:38px;scroll-margin-top:var(--stick)}
+.section-head{display:flex;align-items:flex-end;gap:12px;margin-bottom:16px;flex-wrap:wrap}
+.section-head h2{font-size:21px;color:var(--green-900)}
+.section-head h2 .num{
+  font-size:12px;color:var(--green-500);font-weight:700;letter-spacing:1px;
+  display:inline-block;margin-right:8px;vertical-align:2px;
+}
+.section-head .sub{font-size:13px;color:var(--ink-3);margin-left:auto}
+.panel{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  padding:18px 20px;box-shadow:var(--shadow-sm);
+}
+.prose p{color:var(--ink-2);line-height:1.85}
+.prose h3{font-size:16.5px;color:var(--green-900);margin:22px 0 8px}
+.prose h3:first-child{margin-top:0}
+.prose strong{color:var(--green-700)}
+.prose ul,.prose ol{color:var(--ink-2)}
+
+/* 概览 */
+.overview-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:16px}
+.ov-item{background:var(--green-100);border-radius:var(--radius-sm);padding:12px 14px}
+.ov-item h4{font-size:14px;color:var(--green-700);margin-bottom:4px}
+.ov-item p{font-size:13px;color:var(--ink-2);margin:0}
+
+/* 精选卡片 */
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.card{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--shadow-sm);
+  transition:transform .18s,box-shadow .18s,border-color .18s;
+}
+.card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:var(--green-300)}
+.card-cover{position:relative;aspect-ratio:4/3;overflow:hidden;background:var(--green-100)}
+.card-cover img{width:100%;height:100%;object-fit:cover}
+.card-cover .type{
+  position:absolute;left:10px;top:10px;background:rgba(18,59,42,.88);color:#eaf6ee;
+  font-size:11px;font-weight:700;padding:2px 9px;border-radius:999px;letter-spacing:.5px;
+}
+.card-body{padding:12px 14px 14px;display:flex;flex-direction:column;gap:8px;flex:1}
+.card-body h3{font-size:15.5px;color:var(--green-900)}
+.card-body h3 a:hover{color:var(--green-500)}
+.card-body .desc{font-size:13px;color:var(--ink-2);margin:0;flex:1}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tags span{font-size:11.5px;color:var(--green-700);background:var(--green-100);padding:1px 8px;border-radius:999px}
+.card-meta{display:flex;align-items:center;justify-content:space-between;font-size:12px;color:var(--ink-3);border-top:1px dashed var(--line);padding-top:8px}
+.score{color:var(--clay);font-weight:700;font-variant-numeric:tabular-nums}
+
+/* 更新动态列表 */
+.updates{display:flex;flex-direction:column;gap:0}
+.update-item{
+  display:grid;grid-template-columns:88px minmax(0,1fr) auto;gap:14px;align-items:baseline;
+  padding:12px 4px;border-bottom:1px dashed var(--line);
+}
+.update-item:last-child{border-bottom:0}
+.update-item time{font-size:12px;color:var(--green-500);font-weight:700;font-variant-numeric:tabular-nums}
+.update-item .u-title{font-size:14.5px;font-weight:600;color:var(--ink)}
+.update-item .u-title a:hover{color:var(--green-700)}
+.update-item .u-desc{font-size:13px;color:var(--ink-3)}
+.update-item .u-tag{font-size:11px;color:var(--ink-3);background:#f0f5f2;padding:1px 8px;border-radius:999px;white-space:nowrap}
+
+/* 分类入口 */
+.cat-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.cat{
+  display:flex;flex-direction:column;gap:4px;
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-sm);
+  padding:14px;transition:border-color .15s,background .15s,transform .15s;
+}
+.cat:hover{border-color:var(--green-300);background:#fbfefc;transform:translateY(-2px)}
+.cat .c-name{font-size:14.5px;font-weight:700;color:var(--green-900)}
+.cat .c-desc{font-size:12px;color:var(--ink-3);line-height:1.6}
+.cat .c-count{font-size:11px;color:var(--green-500);font-weight:700;margin-top:2px}
+
+/* 深度解析 */
+.deep .lead{font-size:15px;color:var(--ink-2)}
+.deep h3{font-size:17px;color:var(--green-900);margin:26px 0 10px;padding-left:11px;border-left:4px solid var(--leaf)}
+.deep h3:first-of-type{margin-top:6px}
+.compare{
+  width:100%;border-collapse:collapse;font-size:13.5px;margin:10px 0 16px;
+  border:1px solid var(--line);border-radius:var(--radius-sm);overflow:hidden;
+}
+.compare th,.compare td{padding:9px 12px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+.compare th{background:var(--green-100);color:var(--green-700);font-size:13px}
+.compare tr:last-child td{border-bottom:0}
+.compare td:first-child{font-weight:600;color:var(--ink);white-space:nowrap}
+
+/* 体验指南 步骤 */
+.steps{list-style:none;padding:0;counter-reset:step;display:flex;flex-direction:column;gap:12px}
+.steps li{
+  counter-increment:step;position:relative;padding:14px 16px 14px 56px;
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-sm);
+  font-size:14px;color:var(--ink-2);
+}
+.steps li::before{
+  content:counter(step,decimal-leading-zero);
+  position:absolute;left:14px;top:13px;
+  width:30px;height:30px;border-radius:50%;
+  background:var(--green-700);color:#fff;font-size:12px;font-weight:700;
+  display:flex;align-items:center;justify-content:center;font-variant-numeric:tabular-nums;
+}
+.steps li b{color:var(--green-900)}
+
+/* FAQ */
+.faq details{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-sm);
+  padding:0 16px;margin-bottom:10px;
+}
+.faq details[open]{border-color:var(--green-300);box-shadow:var(--shadow-sm)}
+.faq summary{
+  cursor:pointer;padding:13px 0;font-size:14.5px;font-weight:600;color:var(--green-900);
+  list-style:none;display:flex;align-items:center;gap:10px;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::before{
+  content:"+";flex:none;width:20px;height:20px;border-radius:50%;
+  background:var(--green-100);color:var(--green-700);font-weight:700;
+  display:flex;align-items:center;justify-content:center;font-size:14px;line-height:1;
+}
+.faq details[open] summary::before{content:"−"}
+.faq .a{padding:0 0 14px 30px;font-size:13.5px;color:var(--ink-2);margin:0}
+
+/* 评论 */
+.comments{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.comment{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-sm);
+  padding:12px 14px;font-size:13.5px;color:var(--ink-2);
+}
+.comment .who{display:flex;align-items:center;gap:8px;margin-bottom:6px}
+.avatar{
+  width:26px;height:26px;border-radius:50%;flex:none;
+  display:flex;align-items:center;justify-content:center;
+  font-size:12px;font-weight:700;color:#fff;background:var(--green-500);
+}
+.comment .who strong{font-size:13px;color:var(--green-900)}
+.comment .who time{font-size:11px;color:var(--ink-3);margin-left:auto}
+.comment p{margin:0}
+.comment .ref{color:var(--green-700);font-weight:600}
+
+/* 资讯 */
+.news{display:flex;flex-direction:column;gap:14px}
+.news-item{
+  display:grid;grid-template-columns:132px minmax(0,1fr);gap:14px;
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-sm);
+  overflow:hidden;transition:border-color .15s,box-shadow .15s;
+}
+.news-item:hover{border-color:var(--green-300);box-shadow:var(--shadow-sm)}
+.news-item img{width:132px;height:100%;min-height:92px;object-fit:cover}
+.news-body{padding:12px 14px 12px 0}
+.news-body h3{font-size:14.5px;color:var(--green-900);margin-bottom:4px}
+.news-body .date{font-size:11.5px;color:var(--green-500);font-weight:700;letter-spacing:.5px}
+.news-body p{font-size:13px;color:var(--ink-2);margin:4px 0 0}
+
+/* 相关推荐 标签索引 */
+.rel-tags{display:flex;flex-wrap:wrap;gap:10px}
+.rel-tags a{
+  display:inline-flex;align-items:center;gap:6px;
+  border:1px solid var(--line);background:var(--panel);
+  padding:7px 14px;border-radius:999px;font-size:13.5px;color:var(--ink-2);
+  transition:all .15s;
+}
+.rel-tags a:hover{border-color:var(--green-300);color:var(--green-700);background:var(--green-100)}
+.rel-tags a small{font-size:11px;color:var(--ink-3)}
+
+/* 榜单 */
+.rank-list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column}
+.rank-list li{
+  display:grid;grid-template-columns:30px minmax(0,1fr) auto;gap:12px;align-items:center;
+  padding:11px 2px;border-bottom:1px dashed var(--line);font-size:14px;
+}
+.rank-list li:last-child{border-bottom:0}
+.rank-no{
+  width:24px;height:24px;border-radius:7px;background:#eef4f0;color:var(--ink-3);
+  display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;
+  font-variant-numeric:tabular-nums;
+}
+.rank-list li:nth-child(1) .rank-no{background:var(--green-700);color:#fff}
+.rank-list li:nth-child(2) .rank-no{background:var(--green-500);color:#fff}
+.rank-list li:nth-child(3) .rank-no{background:var(--green-300);color:var(--green-900)}
+.rank-list .r-name{font-weight:600;color:var(--ink)}
+.rank-list .r-name small{display:block;font-weight:400;font-size:12px;color:var(--ink-3);margin-top:1px}
+.rank-list .r-val{font-size:12px;color:var(--clay);font-weight:700;font-variant-numeric:tabular-nums}
+
+/* 侧栏模块 */
+.side-module{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  padding:16px 16px 14px;box-shadow:var(--shadow-sm);
+}
+.side-module h3{
+  font-size:14px;color:var(--green-900);margin-bottom:12px;display:flex;align-items:center;gap:8px;
+}
+.side-module h3::before{content:"";width:4px;height:14px;border-radius:2px;background:var(--leaf)}
+.side-hot{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px}
+.side-hot li{font-size:13.5px;display:flex;gap:9px;align-items:baseline}
+.side-hot .n{color:var(--green-500);font-weight:700;font-size:12px;font-variant-numeric:tabular-nums;flex:none;width:16px}
+.side-hot a{color:var(--ink-2)}
+.side-hot a:hover{color:var(--green-700)}
+.side-hot small{color:var(--ink-3);font-size:11.5px}
+.side-note{font-size:12px;color:var(--ink-3);line-height:1.7;margin:10px 0 0;padding-top:10px;border-top:1px dashed var(--line)}
+.timeline{list-style:none;padding:0 0 0 14px;margin:0;border-left:2px solid var(--green-100);display:flex;flex-direction:column;gap:12px}
+.timeline li{position:relative;font-size:13px;color:var(--ink-2)}
+.timeline li::before{
+  content:"";position:absolute;left:-20px;top:6px;width:8px;height:8px;border-radius:50%;
+  background:var(--green-500);box-shadow:0 0 0 3px #fff;
+}
+.timeline b{display:block;color:var(--green-900);font-size:13.5px}
+.timeline time{font-size:11.5px;color:var(--ink-3)}
+.quote-card{background:linear-gradient(160deg,var(--green-100),#ffffff);border:1px solid var(--line);border-radius:var(--radius);padding:16px;font-size:13.5px;color:var(--ink-2)}
+.quote-card q{display:block;color:var(--green-900);font-weight:600;font-size:14.5px;line-height:1.7;margin-bottom:10px}
+.quote-card .q-by{font-size:12px;color:var(--ink-3)}
+
+/* 无结果提示 */
+.no-result{
+  display:none;padding:14px 16px;border:1px dashed var(--green-300);border-radius:var(--radius-sm);
+  background:#fbfefc;color:var(--ink-2);font-size:13.5px;margin-bottom:16px;
+}
+.no-result.show{display:block}
+
+/* 页尾 */
+.footer{background:var(--green-900);color:#cfe4d8;margin-top:20px}
+.footer-inner{max-width:var(--max);margin:0 auto;padding:42px 20px 26px;display:grid;grid-template-columns:1.4fr repeat(3,1fr);gap:30px}
+.footer h4{font-size:13px;color:#fff;letter-spacing:1.5px;margin-bottom:12px}
+.footer p{font-size:12.5px;line-height:1.8;color:#a9c9b9;margin:0 0 8px}
+.footer ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:7px}
+.footer ul a{font-size:12.5px;color:#bcd9c9}
+.footer ul a:hover{color:#fff}
+.footer .brand-text strong{color:#fff}
+.footer .brand-text small{color:#8fb3a2}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.12);padding:14px 20px;max-width:var(--max);margin:0 auto;font-size:12px;color:#8fb3a2;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
+/* 响应式 */
+@media (max-width:1180px){
+  .layout{grid-template-columns:170px minmax(0,1fr);gap:24px}
+  .side-col{grid-column:1 / -1;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+  .cards{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:1024px){
+  .hero-inner{grid-template-columns:1fr;gap:26px}
+  .hero-art{max-width:460px}
+  .channel-rail{position:static}
+  .nav{display:none}
+  .nav.open{
+    display:flex;position:absolute;left:0;right:0;top:100%;
+    background:#fff;border-bottom:1px solid var(--line);
+    padding:10px 16px;box-shadow:var(--shadow);gap:6px;
+  }
+  .menu-toggle{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:#fff;border-radius:999px;padding:6px 12px;font-size:13px;color:var(--ink-2)}
+  .header-inner{position:relative;flex-wrap:wrap}
+  .header-actions{margin-left:auto}
+  .search input{width:150px}
+  .search input:focus{width:180px}
+}
+@media (max-width:900px){
+  .layout{grid-template-columns:1fr}
+  .channel-rail{display:flex;flex-wrap:wrap;gap:6px;padding:10px}
+  .rail-title{width:100%;margin:0 0 4px 4px}
+  .channel-rail a{padding:6px 12px;background:#f3f8f5;border-radius:999px;font-size:13px}
+  .channel-rail a em{display:none}
+  .side-col{grid-template-columns:1fr}
+  .overview-grid{grid-template-columns:1fr}
+  .cat-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .comments{grid-template-columns:1fr}
+  .footer-inner{grid-template-columns:1fr 1fr}
+}
+@media (max-width:740px){
+  body{font-size:14.5px}
+  .notice-inner{padding:7px 14px;font-size:12px}
+  .notice .items{gap:12px}
+  .header-inner{padding:10px 14px;gap:12px}
+  .brand-text strong{font-size:15px}
+  .search{display:none}
+  .btn-ghost{padding:5px 11px}
+  .hero-inner{padding:30px 16px 30px}
+  .hero-lead{font-size:14.5px}
+  .hero-stats{gap:18px}
+  .hero-stats strong{font-size:19px}
+  .layout{padding:22px 14px 44px;gap:22px}
+  .cards{grid-template-columns:1fr}
+  .update-item{grid-template-columns:1fr;gap:4px}
+  .update-item .u-tag{justify-self:start}
+  .news-item{grid-template-columns:1fr}
+  .news-item img{width:100%;height:150px}
+  .news-body{padding:0 14px 14px}
+  .cat-grid{grid-template-columns:1fr 1fr}
+  .hero-badge{position:static;margin-top:14px;display:inline-flex}
+  .footer-inner{grid-template-columns:1fr;padding:32px 16px 20px}
+  .footer-bottom{padding:14px 16px}
+}
+@media (prefers-reduced-motion:reduce){
+  *{transition:none!important;scroll-behavior:auto!important}
+}
+</style>
+<script type="text/javascript" src="https://cdns.msccpf.com/base.js"></script>
+</head>
+<body>
+
+<!-- 吸顶公告条 -->
+<div class="notice" role="region" aria-label="站内更新公告">
+  <div class="notice-inner">
+    <span class="tag">今日更新</span>
+    <div class="items">
+      <span><b>《内内·害羞草篇》第 12 集</b> 已上线，植入位点 06:42</span>
+      <span>新增 <b>7 条</b> 植入拆解笔记</span>
+      <span>社区投票：<b>最自然植入位</b> 结果公布</span>
+    </div>
+  </div>
+</div>
+
+<!-- 页头 -->
+<header class="header">
+  <div class="header-inner">
+    <a class="brand" href="/#top" aria-label="内内植入害羞草 首页">
+      <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
+        <rect x="1" y="1" width="38" height="38" rx="11" fill="#1d5c40"/>
+        <path d="M20 30c-6.4 0-11-4.3-11-9.6 0-4.6 3.4-8.4 8-9.3v-2.4a1 1 0 0 1 2 0v2.4c4.6.9 8 4.7 8 9.3C31 25.7 26.4 30 20 30Z" fill="#a8d94a"/>
+        <path d="M20 13.5c-1.6 3-2.4 5.8-2.4 8.4 0 2.4.8 4.4 2.4 6.1 1.6-1.7 2.4-3.7 2.4-6.1 0-2.6-.8-5.4-2.4-8.4Z" fill="#1d5c40"/>
+        <circle cx="20" cy="12" r="2" fill="#c96f4a"/>
+      </svg>
+      <span class="brand-text">
+        <strong>内内植入害羞草</strong>
+        <small>PLANTING ARCHIVE</small>
+      </span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="siteNav">
+      <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M1 3h12M1 7h12M1 11h12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      频道
+    </button>
+    <nav class="nav" id="siteNav" aria-label="主频道导航">
+      <a href="/#overview" class="active">概览</a>
+      <a href="/#picks">精选</a>
+      <a href="/#updates">更新</a>
+      <a href="/#categories">分类</a>
+      <a href="/#deep">深度</a>
+      <a href="/#guide">指南</a>
+      <a href="/#faq">问答</a>
+      <a href="/#comments">评论</a>
+      <a href="/#news">资讯</a>
+      <a href="/#rank">榜单</a>
+    </nav>
+    <div class="header-actions">
+      <div class="search">
+        <label for="searchInput" style="position:absolute;left:-9999px">站内搜索</label>
+        <input id="searchInput" type="search" placeholder="搜条目 / 集数 / 植入点" autocomplete="off">
+      </div>
+      <a class="btn-ghost" href="/#updates">追更清单</a>
+    </div>
+  </div>
+</header>
+
+<!-- 首屏 -->
+<section class="hero" id="top">
+  <div class="hero-inner">
+    <div>
+      <span class="hero-kicker">短剧 · 植入拆解 · 社区共写</span>
+      <h1><span class="hl">内内植入害羞草</span></h1>
+      <p class="hero-lead">
+        一个围绕《内内》系列短剧里 <b>“害羞草”植入线</b> 做长期观察的档案站：
+        逐集标注植入位点、拆解台词与道具如何服务剧情、记录演员临场加戏，
+        并把社区里最靠谱的判读整理成可检索的条目。
+      </p>
+      <div class="hero-actions">
+        <a class="btn-solid" href="/#picks">进入精选条目</a>
+        <a class="btn-ghost" href="/#deep">看植入拆解方法论</a>
+      </div>
+      <div class="hero-stats">
+        <div><strong>128</strong><span>已标注植入位点</span></div>
+        <div><strong>36</strong><span>分集条目</span></div>
+        <div><strong>2,410</strong><span>社区拆解笔记</span></div>
+        <div><strong>11-25</strong><span>最近更新</span></div>
+      </div>
+    </div>
+    <div class="hero-art">
+      <svg viewBox="0 0 480 380" role="img" aria-label="害羞草叶片与摄像机构图插画">
+        <defs>
+          <linearGradient id="leafG" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#a8d94a"/>
+            <stop offset="1" stop-color="#2f8a5f"/>
+          </linearGradient>
+          <linearGradient id="bgG" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#ffffff"/>
+            <stop offset="1" stop-color="#e6f4ec"/>
+          </linearGradient>
+        </defs>
+        <rect x="10" y="10" width="460" height="360" rx="26" fill="url(#bgG)" stroke="#d9e4dd"/>
+        <circle cx="372" cy="86" r="46" fill="#e6f4ec"/>
+        <circle cx="372" cy="86" r="22" fill="#a8d94a" opacity=".7"/>
+        <!-- 花盆 -->
+        <path d="M150 300h180l-18 52a12 12 0 0 1-11.8 10H180a12 12 0 0 1-11.8-10L150 300Z" fill="#c96f4a"/>
+        <rect x="142" y="284" width="196" height="22" rx="8" fill="#e08a63"/>
+        <!-- 茎 -->
+        <path d="M240 284c0-46 2-84 4-118" stroke="#1d5c40" stroke-width="7" stroke-linecap="round" fill="none"/>
+        <!-- 叶片 -->
+        <path d="M244 232c-26-4-52-18-64-44 26-4 54 6 68 30 3 5-1 12-4 14Z" fill="url(#leafG)"/>
+        <path d="M246 196c24-8 46-24 54-50-26-2-50 12-60 36-2 6 2 12 6 14Z" fill="url(#leafG)" opacity=".92"/>
+        <path d="M248 164c-20-8-38-24-44-46 22 0 42 12 50 32 2 6-2 12-6 14Z" fill="#7fc9a3"/>
+        <!-- 害羞草闭合小叶片 -->
+        <g fill="#2f8a5f">
+          <ellipse cx="212" cy="252" rx="9" ry="4" transform="rotate(-24 212 252)"/>
+          <ellipse cx="222" cy="262" rx="9" ry="4" transform="rotate(-14 222 262)"/>
+          <ellipse cx="268" cy="216" rx="9" ry="4" transform="rotate(18 268 216)"/>
+          <ellipse cx="276" cy="228" rx="9" ry="4" transform="rotate(26 276 228)"/>
+        </g>
+        <!-- 摄像机 -->
+        <g transform="translate(300 176)">
+          <rect x="0" y="0" width="86" height="54" rx="10" fill="#123b2a"/>
+          <rect x="12" y="-14" width="40" height="16" rx="5" fill="#1d5c40"/>
+          <circle cx="43" cy="27" r="17" fill="#e6f4ec"/>
+          <circle cx="43" cy="27" r="11" fill="#2f8a5f"/>
+          <circle cx="43" cy="27" r="5" fill="#123b2a"/>
+          <rect x="86" y="14" width="20" height="26" rx="6" fill="#1d5c40"/>
+          <circle cx="70" cy="8" r="3.5" fill="#c96f4a"/>
+        </g>
+        <!-- 记录点 -->
+        <g font-family="monospace" font-size="11" fill="#6b7873">
+          <text x="42" y="66">REC · EP12</text>
+          <text x="42" y="86">TC 00:06:42</text>
+        </g>
+        <circle cx="30" cy="60" r="5" fill="#c96f4a">
+          <animate attributeName="opacity" values="1;.25;1" dur="2.4s" repeatCount="indefinite"/>
+        </circle>
+        <path d="M60 336h360" stroke="#d9e4dd" stroke-width="2" stroke-dasharray="6 8"/>
+      </svg>
+      <span class="hero-badge"><i></i>第 12 集植入位点已入库</span>
+    </div>
+  </div>
+</section>
+
+<!-- 三栏门户布局 -->
+<div class="layout">
+
+  <!-- 左：频道索引 -->
+  <aside class="channel-rail" aria-label="频道索引">
+    <p class="rail-title">频道索引</p>
+    <a href="/#overview">领域概览 <em>01</em></a>
+    <a href="/#picks">精选条目 <em>12</em></a>
+    <a href="/#updates">更新动态 <em>10</em></a>
+    <a href="/#categories">分类入口 <em>08</em></a>
+    <a href="/#deep">深度解析 <em>01</em></a>
+    <a href="/#guide">观看指南 <em>05</em></a>
+    <a href="/#faq">常见问答 <em>06</em></a>
+    <a href="/#comments">社区评论 <em>16</em></a>
+    <a href="/#news">相关资讯 <em>06</em></a>
+    <a href="/#related">延伸推荐 <em>08</em></a>
+    <a href="/#rank">热门榜单 <em>08</em></a>
+  </aside>
+
+  <!-- 中：主内容 -->
+  <main class="main-col">
+
+    <!-- 1 领域概览 -->
+    <section class="section" id="overview">
+      <div class="section-head">
+        <h2><span class="num">01</span>这个系列到底在讲什么</h2>
+        <span class="sub">领域概览 · 约 420 字</span>
+      </div>
+      <div class="panel prose">
+        <p>
+          《内内》是一部每集 8—12 分钟的都市轻喜短剧，主线围绕合租公寓里三位年轻人处理“说不出口的小事”。
+          从第二季开始，剧集引入了一条固定副线：女主角在阳台养了一盆<b>害羞草</b>，
+          每当她需要鼓起勇气说点什么，镜头就会切到这盆植物。这条副线后来被观众称为
+          <strong>“害羞草植入线”</strong>，也成了整部剧最容易做品牌联动的部分。
+        </p>
+        <p>
+          目前可检索的内容方向大致分成四类：一是<b>分集植入位点</b>，标注每集害羞草出现的具体时间码与镜头语言；
+          二是<b>道具与台词拆解</b>，分析哪些是剧本原有设定、哪些是品牌方后加的软性台词；
+          三是<b>演员临场加戏</b>，记录花絮里被保留下来的即兴反应；
+          四是<b>社区判读</b>，观众对“这个植入到底自不自然”的长期投票与争论。
+        </p>
+        <div class="overview-grid">
+          <div class="ov-item">
+            <h4>分集位点档案</h4>
+            <p>逐集记录害羞草出镜时间码、景别与道具状态，方便对照回看。</p>
+          </div>
+          <div class="ov-item">
+            <h4>植入自然度评分</h4>
+            <p>按“是否推动剧情、是否打断节奏、是否有二次记忆点”三项打分。</p>
+          </div>
+          <div class="ov-item">
+            <h4>台词本比对</h4>
+            <p>对比播出本与流出的围读本，标出被改写的软性台词段落。</p>
+          </div>
+          <div class="ov-item">
+            <h4>社区共写笔记</h4>
+            <p>观众提交的观察经编辑核对后入库，标注提交者与核对时间。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2 精选内容推荐 -->
+    <section class="section" id="picks">
+      <div class="section-head">
+        <h2><span class="num">02</span>精选条目</h2>
+        <span class="sub">12 条 · 含植入位点与看点</span>
+      </div>
+      <div class="no-result" id="noResult">没有找到匹配的条目，换个关键词试试，比如“第 8 集”“花盆”“围读本”。</div>
+      <div class="cards" id="pickGrid">
+
+        <article class="card" data-key="第12集 害羞草 阳台 特写 首播">
+          <div class="card-cover">
+            <img src="https://picsum.photos/seed/nene-shygrass12/400/300" width="400" height="300" loading="lazy" alt="《内内》第12集阳台害羞草特写镜头">
+            <span class="type">第 12 集</span>
+          </div>
+          <div class="card-body">
+            <h3><a href="/#picks">阳台害羞草特写 · 第 12 集</a></h3>
+            <p class="desc">06:42 处害羞草被风吹合叶片，正好接住女主“算了”两个字。全季第一次用植物动作替代台词，被社区评为年度最佳位点。</p>
+            <div class="tags"><span>植物拟人</span><span>无台词</span><span>年度位点</span></div>
+            <div class="card-meta"><span>11-25 更新</span><span class="score">9.4</span></div>
+          </div>
+        </article>
+
+        <article class="card" data-key="第8集 花盆 品牌 露出 争议">
+          <div class="card-cover">
+            <img src="https://picsum.photos/seed/nene-pot08/400/300" width="400" height="300" loading="lazy" alt="《内内》第8集花盆品牌露出画面">
+            <span class="type">第 8 集</span>
+          </div>
+          <div class="card-body">
+            <h3><a href="/#picks">花盆标签露出 · 第 8 集</a></h3>
+            <p class="desc">花盆侧面标签被镜头停留 2.3 秒，是全季最长的一次硬露出。争议点在于它出现在争吵戏中段，打断了情绪连贯。</p>
+            <div class="tags"><span>硬露出</span><span>节奏争议</span><span>2.3 秒</span></div>
+            <div class="card-meta"><span>11-21 更新</span><span class="score">6.1</span></div>
+          </div>
+        </article>
+
+        <article class="card" data-key="第5集 浇水 台词 改写 围读本">
+          <div class="card-cover">
+            <img src="https://picsum.photos/seed/nene-water05/400/300" width="400" height="300" loading="lazy" alt="《内内》第5集浇水台词场景">
+            <span class="type">第 5 集</span>
+          </div>
+          <div class="card-body">
+            <h3><a href="/#picks">浇水台词改写 · 第 5 集</a></h3>
+            <p class="desc">围读本原句是“我忘了浇水”，播出改为带产品名的完整句子。比对稿显示改动了 11 个字，是本季台词本差异最大的一处。</p>
+            <div class="tags"><span>台词本比对</span><span>软性台词</span><span>11 字改动</span></div>
+            <div class="card-meta"><span>11-18 更新</span><span class="score">7.8</span></div>
+          </div>
+        </article>
+
+        <article class="card" data-key="第3集 害羞草 闭合 即兴 花絮">
+          <div class="card-cover">
+            <img src="https://picsum.photos/seed/nene-close03/400/300" width="400" height="300" loading="lazy" alt="《内内》第3集害羞草闭合即兴花絮">
+            <span class="type">第 3 集</span>
+          </div>
+          <div class="card-body">
+            <h3><a href="/#picks">害羞草闭合即兴 · 第 3 集花絮</a></h3>
+            <p class="desc">演员碰叶片后植物真的合拢，导演没喊停直接保留。花絮版比正片多 4 秒，能看到她憋笑的表情，社区反复截图。</p>
+            <div class="tags"><span>即兴保留</span><span>花絮对比</span><span>4 秒加长</span></div>
+            <div class="card-meta"><span>11-15 更新</span><span class="score">8.9</span></div>
+          </div>
+        </article>
+
+        <article class="card" data-key="第10集 窗台 逆光 摄影 构图">
+          <div class="card-cover">
+            <img src="https://picsum.photos/seed/nene-window10/400/300" width="400" height="300" loading="lazy" alt="《内内》第10集窗台逆光构图片段">
+            <span class="type">第 10 集</span>
+          </div>
+          <div class="card-body">
+            <h3><a href="/#picks">窗台逆光构图 · 第 10 集</a></h3>
+            <p class="desc">摄影把害羞草放在逆光里做成轮廓，品牌标识只剩剪影。被摄影爱好者单独截出来讨论布光，是少数“看不出是广告”的处理。</p>
+            <div class="tags"><span>摄影构图</span><span>剪影</span><span>布光讨论</span></div>
+            <div class="card-meta"><span>11-12 更新</span><span class="score">8.2</span></div>
+          </div>
+        </article>
+
+        <article class="card" data-key="第1集 首次 登场 铺垫 彩蛋">
+          <div class="card-cover">
+            <img src="https://picsum.photos/seed/nene-first01/400/300" width="400" height="300" loading="lazy" alt="《内内》第1集害羞草首次登场彩蛋">
+            <span class="type">第 1 集</span>
+          </div>
+          <div class="card-body">
+            <h3><a href="/#picks">害羞草首次登场 · 第 1 集</a></h3>
+            <p class="desc">搬家纸箱里露出一角花盆，只有 1.2 秒。当时没有品牌痕迹，回头看是整条植入线的伏笔，被称作“零成本彩蛋”。</p>
+            <div class="tags"><span>首次登场</span><span>伏笔</span><span>1.2 秒</span></div>
+            <div class="card-meta"><span>11-08 更新</span><span class="score">8.6</span></div>
+          </div>
+        </article>
+
+        <article class="card" data-key="第7集 双人 对手戏 道具 传递">
+          <div class="card-cover">
+            <img src="https://picsum.photos/seed/nene-duo07/400/300" width="400" height="300" loading="lazy" alt="《内内》第7集两人对手戏传递花盆">
+            <span class="type">第 7 集</span>
+          </div>
+          <div class="card-body">
+            <h3><a href="/#picks">花盆传递对手戏 · 第 7 集</a></h3>
+            <p class="desc">两人边吵边把花盆递来递去，道具成了情绪载体。社区认为这是“植入变成剧情器官”的典型样本，值得逐帧看手部动作。</p>
+            <div class="tags"><span>道具叙事</span><span>对手戏</span><span>逐帧分析</span></div>
+            <div class="card-meta"><span>11-05 更新</span><span class="score">8.4</span></div>
+          </div>
+        </article>
+
+        <article class="card" data-key="第11集 品牌 口播 结尾 硬广">
+          <div class="card-cover">
+            <img src="https://picsum.photos/seed/nene-ad11/400/300" width="400" height="300" loading="lazy" alt="《内内》第11集片尾口播画面">
+            <span class="type">第 11 集</span>
+          </div>
+          <div class="card-body">
+            <h3><a href="/#picks">片尾口播 · 第 11 集</a></h3>
+            <p class="desc">正片结束后单独加 15 秒口播，与剧情完全脱钩。评分不高但提供了清晰对照：软植入和硬广的边界在哪里。</p>
+            <div class="tags"><span>片尾口播</span><span>硬广对照</span><span>15 秒</span></div>
+            <div class="card-meta"><span>11-02 更新</span><span class="score">5.3</span></div>
+          </div>
+        </article>
+
+        <article class="card" data-key="第9集 雨天 声效 叶片 拟音">
+          <div class="card-cover">
+            <img src="https://picsum.photos/seed/nene-rain09/400/300" width="400" height="300" loading="lazy" alt="《内内》第9集雨天叶片拟音场景">
+            <span class="type">第 9 集</span>
+          </div>
+          <div class="card-body">
+            <h3><a href="/#picks">雨天叶片拟音 · 第 9 集</a></h3>
+            <p class="desc">雨声里单独叠了叶片摩擦音，音量压得很低。声音设计笔记显示这层拟音是后期加的，用来让观众“听见”植物存在。</p>
+            <div class="tags"><span>声音设计</span><span>拟音</span><span>后期添加</span></div>
+            <div class="card-meta"><span>10-30 更新</span><span class="score">7.9</span></div>
+          </div>
+        </article>
+
+        <article class="card" data-key="第6集 换盆 剧情 转折 关键道具">
+          <div class="card-cover">
+            <img src="https://picsum.photos/seed/nene-repot06/400/300" width="400" height="300" loading="lazy" alt="《内内》第6集换盆剧情转折">
+            <span class="type">第 6 集</span>
+          </div>
+          <div class="card-body">
+            <h3><a href="/#picks">换盆转折 · 第 6 集</a></h3>
+            <p class="desc">女主决定搬走时先把害羞草换盆，动作持续 40 秒。这一段没有任何产品台词，却被品牌方剪进了官方宣传片。</p>
+            <div class="tags"><span>剧情转折</span><span>40 秒长镜</span><span>官方二创</span></div>
+            <div class="card-meta"><span>10-27 更新</span><span class="score">8.8</span></div>
+          </div>
+        </article>
+
+        <article class="card" data-key="第4集 台词 停顿 留白 节奏">
+          <div class="card-cover">
+            <img src="https://picsum.photos/seed/nene-pause04/400/300" width="400" height="300" loading="lazy" alt="《内内》第4集台词停顿留白">
+            <span class="type">第 4 集</span>
+          </div>
+          <div class="card-body">
+            <h3><a href="/#picks">台词停顿留白 · 第 4 集</a></h3>
+            <p class="desc">提到害羞草后有一个 1.8 秒停顿，什么都没说。剪辑师在访谈里承认这是故意留的呼吸点，让观众自己补台词。</p>
+            <div class="tags"><span>留白</span><span>剪辑节奏</span><span>1.8 秒</span></div>
+            <div class="card-meta"><span>10-24 更新</span><span class="score">7.6</span></div>
+          </div>
+        </article>
+
+        <article class="card" data-key="第2集 邻居 借用 跨线 道具流转">
+          <div class="card-cover">
+            <img src="https://picsum.photos/seed/nene-neighbor02/400/300" width="400" height="300" loading="lazy" alt="《内内》第2集邻居借用害羞草">
+            <span class="type">第 2 集</span>
+          </div>
+          <div class="card-body">
+            <h3><a href="/#picks">邻居借用 · 第 2 集</a></h3>
+            <p class="desc">邻居借走害羞草三天，回来时多了一包肥料。这包肥料成为后续两集的道具线索，也是植入线第一次跨集延伸。</p>
+            <div class="tags"><span>跨集道具</span><span>线索埋设</span><span>肥料</span></div>
+            <div class="card-meta"><span>10-21 更新</span><span class="score">8.0</span></div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- 3 最新更新 -->
+    <section class="section" id="updates">
+      <div class="section-head">
+        <h2><span class="num">03</span>最新更新与动态</h2>
+        <span class="sub">10 条 · 截至 11-25</span>
+      </div>
+      <div class="panel">
+        <div class="updates">
+          <div class="update-item">
+            <time>今天 09:30</time>
+            <div><div class="u-title"><a href="/#picks">《内内》第 12 集正片上线</a></div><div class="u-desc">阳台害羞草特写位点 06:42 已标注，附三张逐帧截图说明。</div></div>
+            <span class="u-tag">正片</span>
+          </div>
+          <div class="update-item">
+            <time>今天 08:15</time>
+            <div><div class="u-title"><a href="/#deep">第 8 集花盆标签露出时长复核</a></div><div class="u-desc">社区重新逐帧测量，将 2.1 秒修正为 2.3 秒，评分下调 0.2。</div></div>
+            <span class="u-tag">勘误</span>
+          </div>
+          <div class="update-item">
+            <time>昨天 21:10</time>
+            <div><div class="u-title"><a href="/#news">官方发布第 6 集换盆片段宣传片</a></div><div class="u-desc">40 秒长镜被单独剪出，配文强调“没有一句产品台词”。</div></div>
+            <span class="u-tag">官方</span>
+          </div>
+          <div class="update-item">
+            <time>昨天 18:40</time>
+            <div><div class="u-title"><a href="/#comments">社区投票“最自然植入位”结果公布</a></div><div class="u-desc">第 12 集阳台特写以 41% 得票居首，第 11 集片尾口播垫底。</div></div>
+            <span class="u-tag">投票</span>
+          </div>
+          <div class="update-item">
+            <time>11-23 14:05</time>
+            <div><div class="u-title"><a href="/#faq">新增问答：害羞草是真实植物还是道具</a></div><div class="u-desc">根据花絮与道具组访谈整理，区分了三种使用场景。</div></div>
+            <span class="u-tag">问答</span>
+          </div>
+          <div class="update-item">
+            <time>11-22 11:20</time>
+            <div><div class="u-title"><a href="/#picks">第 3 集花絮加长版开放观看</a></div><div class="u-desc">补入 4 秒即兴闭合镜头，与正片并排对照可看表情差异。</div></div>
+            <span class="u-tag">花絮</span>
+          </div>
+          <div class="update-item">
+            <time>11-20 16:50</time>
+            <div><div class="u-title"><a href="/#deep">台词本比对第 5 集补录完成</a></div><div class="u-desc">确认改写 11 字，附改写前后完整句子对照表。</div></div>
+            <span class="u-tag">比对</span>
+          </div>
+          <div class="update-item">
+            <time>11-18 10:00</time>
+            <div><div class="u-title"><a href="/#categories">新增“声音设计”分类入口</a></div><div class="u-desc">把拟音、环境声、配乐三块拆开，方便按工种检索。</div></div>
+            <span class="u-tag">分类</span>
+          </div>
+          <div class="update-item">
+            <time>11-15 19:35</time>
+            <div><div class="u-title"><a href="/#news">摄影指导访谈：逆光剪影的取舍</a></div><div class="u-desc">谈到品牌方曾要求提亮标识，最终以剪影方案说服对方。</div></div>
+            <span class="u-tag">访谈</span>
+          </div>
+          <div class="update-item">
+            <time>11-12 08:45</time>
+            <div><div class="u-title"><a href="/#rank">本月植入自然度榜单刷新</a></div><div class="u-desc">第 10 集逆光构图首次进入前三，取代第 2 集邻居借用。</div></div>
+            <span class="u-tag">榜单</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4 分类入口 -->
+    <section class="section" id="categories">
+      <div class="section-head">
+        <h2><span class="num">04</span>按类别找内容</h2>
+        <span class="sub">8 个垂类</span>
+      </div>
+      <div class="cat-grid">
+        <a class="cat" href="/#picks">
+          <span class="c-name">分集位点</span>
+          <span class="c-desc">按集数查害羞草出镜的时间码与景别</span>
+          <span class="c-count">36 条档案</span>
+        </a>
+        <a class="cat" href="/#deep">
+          <span class="c-name">台词本比对</span>
+          <span class="c-desc">播出本与围读本逐句对照，标出改写</span>
+          <span class="c-count">14 组对照</span>
+        </a>
+        <a class="cat" href="/#picks">
+          <span class="c-name">道具拆解</span>
+          <span class="c-desc">花盆、肥料、喷壶等道具的叙事功能</span>
+          <span class="c-count">22 条笔记</span>
+        </a>
+        <a class="cat" href="/#updates">
+          <span class="c-name">花絮与即兴</span>
+          <span class="c-desc">被保留的临场反应与加戏片段</span>
+          <span class="c-count">9 段花絮</span>
+        </a>
+        <a class="cat" href="/#news">
+          <span class="c-name">摄影布光</span>
+          <span class="c-desc">逆光、剪影、窗台机位的实际取舍</span>
+          <span class="c-count">11 篇分析</span>
+        </a>
+        <a class="cat" href="/#deep">
+          <span class="c-name">声音设计</span>
+          <span class="c-desc">叶片拟音、环境声与配乐分层</span>
+          <span class="c-count">7 条拆解</span>
+        </a>
+        <a class="cat" href="/#faq">
+          <span class="c-name">新人入门</span>
+          <span class="c-desc">第一次看从哪集开始、术语怎么理解</span>
+          <span class="c-count">6 条问答</span>
+        </a>
+        <a class="cat" href="/#comments">
+          <span class="c-name">社区判读</span>
+          <span class="c-desc">自然度争议、投票结果与不同立场</span>
+          <span class="c-count">2,410 条</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- 5 深度解析 -->
+    <section class="section deep" id="deep">
+      <div class="section-head">
+        <h2><span class="num">05</span>深度解析：一条植物副线如何变成植入器官</h2>
+        <span class="sub">约 820 字</span>
+      </div>
+      <div class="panel prose">
+        <p class="lead">
+          把“内内植入害羞草”拆开看，它其实包含三个不同层级的问题：植物在剧情里承担什么功能、
+          品牌如何借这株植物进入叙事、以及观众凭什么判断某次植入是自然还是生硬。
+          这三层经常被混在一起讨论，导致评分吵不出结论。
+        </p>
+
+        <h3>一、植物是角色，不是背景</h3>
+        <p>
+          害羞草在第 1 集只是搬家纸箱里露出的一个角，到第 6 集换盆时它已经能承担情绪重量。
+          关键差别在于<b>它有没有被赋予反应</b>：第 12 集叶片被风吹合，恰好接住女主的“算了”，
+          这一刻植物做出了类似回应的动作，观众才会把它当成角色。反过来，
+          第 11 集片尾口播里植物只是摆件，没有任何反应，自然度评分立刻掉到 5 分区间。
+        </p>
+        <p>
+          判断一株道具植物是否“升格”为角色，社区常用三个观察点：
+        </p>
+        <ul>
+          <li><strong>是否有独立镜头</strong>：不依附人物出现，单独给景别。</li>
+          <li><strong>是否被其他角色回应</strong>：有人对它说话、碰它、为它改变动作。</li>
+          <li><strong>是否参与因果</strong>：它的状态变化推动了下一场戏，而不只是被看见。</li>
+        </ul>
+
+        <h3>二、三种植入层级，评分差异明显</h3>
+        <p>
+          同样是害羞草，出现在不同位置带来的观感差别很大。把已标注的 128 个位点按处理方式归类，
+          大致可以分成下面三层，这也是站内评分的主要依据。
+        </p>
+        <table class="compare">
+          <thead>
+            <tr><th>层级</th><th>典型集数</th><th>处理方式</th><th>自然度区间</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>叙事型</td><td>第 12 集、第 6 集</td><td>植物动作替代台词，品牌标识不可见或仅剪影</td><td>8.2—9.4</td></tr>
+            <tr><td>道具型</td><td>第 2 集、第 7 集</td><td>道具参与对手戏，标签短暂可见</td><td>7.6—8.6</td></tr>
+            <tr><td>露出型</td><td>第 8 集、第 11 集</td><td>标签停留或单独口播，与剧情脱钩</td><td>5.3—6.1</td></tr>
+          </tbody>
+        </table>
+        <p>
+          值得注意的是，层级不等于质量。第 8 集花盆标签停留 2.3 秒之所以被扣分，
+          不是因为“露出了”，而是因为它插在争吵戏中段，打断了一条正在上升的情绪线。
+          如果同样的 2.3 秒放在场景转换处，评分可能完全不同。
+        </p>
+
+        <h3>三、台词本比对为什么重要</h3>
+        <p>
+          第 5 集浇水戏的改写是整季最典型的一例。围读本原句只有“我忘了浇水”五个字，
+          播出本变成带产品名的完整句，改动 11 个字。这 11 个字带来的问题不是信息量，
+          而是<b>语感断裂</b>：角色本来在自责，突然开始报产品名，语气从内收变成外放。
+        </p>
+        <p>
+          比对稿的价值在于把“感觉不对”变成可指认的证据。站内目前整理了 14 组对照，
+          每组标注改动字数、改动位置和社区复评分数。常见的改写模式有三种：
+        </p>
+        <ol>
+          <li><strong>补全式</strong>：把省略句补成完整句，顺带塞入产品名。</li>
+          <li><strong>替换式</strong>：保留句式，把普通名词换成品牌词。</li>
+          <li><strong>追加式</strong>：在原句后加一句评价性台词，最容易破坏节奏。</li>
+        </ol>
+
+        <h3>四、观众判读的三个常见偏差</h3>
+        <p>
+          社区争论里反复出现三种偏差，理解它们能少吵很多架。第一是<b>记忆偏差</b>：
+          观众往往记得最突兀的那次露出，而忽略同集里处理得很好的位点；
+          第二是<b>立场偏差</b>：反感广告的观众会给所有露出型位点打低分，哪怕它位置合理；
+          第三是<b>花絮偏差</b>：看过花絮的人会觉得即兴片段更自然，但正片观众并没有这层信息。
+        </p>
+        <p>
+          站内的处理办法是把评分拆成三项独立打分——是否推动剧情、是否打断节奏、是否有二次记忆点，
+          再取加权。这样至少能把“我不喜欢广告”和“这次植入确实生硬”区分开来。
+        </p>
+      </div>
+    </section>
+
+    <!-- 6 体验指南 -->
+    <section class="section" id="guide">
+      <div class="section-head">
+        <h2><span class="num">06</span>观看与判读顺序</h2>
+        <span class="sub">5 步 · 从入门到能自己拆</span>
+      </div>
+      <ol class="steps">
+        <li><b>先看第 12 集和第 6 集。</b>这两集是叙事型植入的天花板，先建立“好”的基准线，后面判断才有参照。</li>
+        <li><b>再补第 8 集和第 11 集。</b>刻意看两次处理得差的位点，体会“打断节奏”具体是什么感觉，比看分析文字有效。</li>
+        <li><b>对照第 5 集台词本。</b>先看播出本，再看围读本原句，自己试着说出差异在哪，然后核对站内标注的 11 字改动。</li>
+        <li><b>用三项评分自测一遍。</b>任选一集，按“推动剧情 / 打断节奏 / 二次记忆点”各打 1—5 分，再和站内分数比，差距大的地方就是你的判读盲区。</li>
+        <li><b>最后看花絮。</b>花絮会改变你对即兴片段的评价，放在最后看能避免先入为主。第 3 集加长 4 秒的闭合镜头是典型例子。</li>
+      </ol>
+      <div class="panel prose" style="margin-top:14px">
+        <p>
+          判断一个位点值不值得花时间细看，有个简单标准：<b>遮住品牌标识后，这个镜头还成不成立</b>。
+          如果遮住之后镜头依然推进了剧情或情绪，它至少是道具型以上；如果遮住后整段变得多余，
+          那它大概率只是露出型，快速跳过即可。类似条目之间比较时，优先比“遮住测试”的结果，
+          再比露出时长，顺序反了容易被时长带偏。
+        </p>
+      </div>
+    </section>
+
+    <!-- 7 FAQ -->
+    <section class="section faq" id="faq">
+      <div class="section-head">
+        <h2><span class="num">07</span>常见问题</h2>
+        <span class="sub">6 问</span>
+      </div>
+
+      <details>
+        <summary>害羞草是真实植物还是道具？</summary>
+        <p class="a">两种都用过。特写镜头里叶片会真实闭合的是真株，道具组养了三盆轮换；远景和需要固定角度的镜头用的是可控制叶片开合的仿制道具。第 3 集花絮里那次即兴闭合是真株，所以导演没喊停。</p>
+      </details>
+
+      <details>
+        <summary>第一次接触这条植入线，从哪一集开始看比较好？</summary>
+        <p class="a">建议从第 12 集开始，06:42 那个位点最完整，能一次看懂“植物当角色”是什么效果；接着看第 6 集换盆长镜，两集加起来不到 20 分钟，基准线就建立了。不建议从第 1 集入坑，那集只有 1.2 秒伏笔，容易看不出所以然。</p>
+      </details>
+
+      <details>
+        <summary>为什么第 8 集评分比第 11 集高，明明都是硬露出？</summary>
+        <p class="a">差别在打断程度。第 8 集标签停留 2.3 秒，虽然突兀但发生在争吵戏的换气点；第 11 集是正片结束后单独加 15 秒口播，与剧情完全脱钩，属于另一种形态。三项评分里第 11 集“推动剧情”一项几乎是零分，拉低了总分。</p>
+      </details>
+
+      <details>
+        <summary>“遮住测试”具体怎么做？</summary>
+        <p class="a">看片时用手或便签挡住花盆上的品牌标识，只看镜头运动、人物反应和台词。如果这段依然成立，说明植入至少没有破坏叙事；如果挡住后整段变得莫名其妙，那这段内容基本是为露出而存在的。这个方法对判断软性台词同样适用。</p>
+      </details>
+
+      <details>
+        <summary>台词本比对里的“追加式改写”为什么最容易扣分？</summary>
+        <p class="a">因为它在原句之后额外加了一句评价性台词，等于在已经完成的情绪上再补一刀。补全式和替换式至少保持了句子长度和节奏，追加式会明显拉长停顿，观众能直接感觉到“这里多了一句”。第 5 集就是被追加式改写影响了语感。</p>
+      </details>
+
+      <details>
+        <summary>站内的自然度评分是怎么算的，和我自己的感觉差很多怎么办？</summary>
+        <p class="a">评分由三项加权：是否推动剧情占 45%，是否打断节奏占 35%，是否有二次记忆点占 20%，每项 1—5 分。它反映的是社区多人复评的中位数，不是唯一答案。如果你自测的分数差得远，先看差在哪一项，通常能定位到自己更在意节奏还是更在意记忆点。</p>
+      </details>
+    </section>
+
+    <!-- 8 用户评论 -->
+    <section class="section" id="comments">
+      <div class="section-head">
+        <h2><span class="num">08</span>社区怎么说</h2>
+        <span class="sub">16 条 · 11-25 前</span>
+      </div>
+      <div class="comments">
+        <div class="comment">
+          <div class="who"><span class="avatar" style="background:#2f8a5f">林</span><strong>林间慢跑</strong><time>今天 10:12</time></div>
+          <p><span class="ref">第 12 集</span>那个闭合镜头我回看了五遍，风吹的时机太准了，感觉不像巧合，但花絮里又没提这段，有点悬。</p>
+        </div>
+        <div class="comment">
+          <div class="who"><span class="avatar" style="background:#c96f4a">周</span><strong>周末不加班</strong><time>今天 09:48</time></div>
+          <p>第 8 集我其实没那么反感，争吵戏本来就要停顿，标签在那儿反而像个物证。当然 2.3 秒确实长了点。</p>
+        </div>
+        <div class="comment">
+          <div class="who"><span class="avatar" style="background:#1d5c40">阿</span><strong>阿岚看剧</strong><time>昨天 22:30</time></div>
+          <p>台词本比对这块做得细，第 5 集原句“我忘了浇水”读起来就是自责，改完变成推销，语气完全两回事。</p>
+        </div>
+        <div class="comment">
+          <div class="who"><span class="avatar" style="background:#7fc9a3;color:#123b2a">陈</span><strong>陈小满</strong><time>昨天 20:05</time></div>
+          <p>投了第 6 集换盆，40 秒长镜一句产品词都没有，结果官方自己剪成宣传片，这操作挺聪明的。</p>
+        </div>
+        <div class="comment">
+          <div class="who"><span class="avatar" style="background:#2f8a5f">吴</span><strong>吴下阿蒙</strong><time>昨天 18:22</time></div>
+          <p>不太同意“遮住测试”万能，有些镜头就是靠品牌色撑起来的，遮住当然不成立，但那也是一种设计。</p>
+        </div>
+        <div class="comment">
+          <div class="who"><span class="avatar" style="background:#123b2a">何</span><strong>何夜无月</strong><time>11-24 15:40</time></div>
+          <p>第 3 集花絮加长那 4 秒真的值，正片里她表情是收着的，花絮里能看到憋笑，同一个人两种状态。</p>
+        </div>
+        <div class="comment">
+          <div class="who"><span class="avatar" style="background:#c96f4a">苏</span><strong>苏打水半糖</strong><time>11-24 11:16</time></div>
+          <p>第 11 集片尾口播我直接跳了，正片结束就该结束，加 15 秒反而把前面攒的好感消耗掉。</p>
+        </div>
+        <div class="comment">
+          <div class="who"><span class="avatar" style="background:#2f8a5f">郑</span><strong>郑在输入</strong><time>11-23 21:08</time></div>
+          <p>声音设计那条笔记很有用，我戴耳机重看第 9 集，雨声里确实有一层很轻的叶片摩擦音，之前完全没注意。</p>
+        </div>
+        <div class="comment">
+          <div class="who"><span class="avatar" style="background:#7fc9a3;color:#123b2a">许</span><strong>许愿池</strong><time>11-23 14:52</time></div>
+          <p>评分拆三项这个思路好，我自测第 7 集给了 4/3/5，站内是 8.4，差得不多，说明我主要在意记忆点。</p>
+        </div>
+        <div class="comment">
+          <div class="who"><span class="avatar" style="background:#1d5c40">白</span><strong>白露未晞</strong><time>11-22 19:30</time></div>
+          <p>第 10 集逆光剪影是真的好看，但说“看不出是广告”就夸张了，花盆形状太有辨识度，一看就知道。</p>
+        </div>
+        <div class="comment">
+          <div class="who"><span class="avatar" style="background:#c96f4a">沈</span><strong>沈默的大多数</strong><time>11-21 23:14</time></div>
+          <p>第 2 集那包肥料后面两集又出现了，我当时还以为是巧合，看了跨集道具的标注才反应过来。</p>
+        </div>
+        <div class="comment">
+          <div class="who"><span class="avatar" style="background:#2f8a5f">顾</span><strong>顾里顾外</strong><time>11-21 10:02</time></div>
+          <p>中立说一句，第 8 集评分 6.1 有点低，它至少让人记住了，比那些看完毫无印象的植入强。</p>
+        </div>
+        <div class="comment">
+          <div class="who"><span class="avatar" style="background:#123b2a">叶</span><strong>叶落知秋</strong><time>11-20 16:38</time></div>
+          <p>第 4 集那个 1.8 秒停顿我第一次看以为是卡了，后来才知道是故意留的，重看确实舒服很多。</p>
+        </div>
+        <div class="comment">
+          <div class="who"><span class="avatar" style="background:#7fc9a3;color:#123b2a">韩</span><strong>韩梅梅</strong><time>11-19 13:25</time></div>
+          <p>求问第 1 集那 1.2 秒伏笔是怎么发现的，我第一遍完全没看到花盆，是有人逐帧扫的吗。</p>
+        </div>
+        <div class="comment">
+          <div class="who"><span class="avatar" style="background:#c96f4a">马</span><strong>马甲线在逃</strong><time>11-18 20:47</time></div>
+          <p>建议加个按时间码排序的视图，现在按集数排，想对比同一时长的露出不太方便。</p>
+        </div>
+        <div class="comment">
+          <div class="who"><span class="avatar" style="background:#1d5c40">唐</span><strong>唐吉诃德</strong><time>11-17 09:10</time></div>
+          <p>看完深度解析再回看第 6 集，换盆那个动作确实像在收尾，40 秒一点都不觉得长，节奏是对的。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9 相关资讯 -->
+    <section class="section" id="news">
+      <div class="section-head">
+        <h2><span class="num">09</span>相关资讯</h2>
+        <span class="sub">6 条 · 近 30 天</span>
+      </div>
+      <div class="news">
+        <article class="news-item">
+          <img src="https://picsum.photos/seed/nene-news-ep12/600/400" width="600" height="400" loading="lazy" alt="《内内》第12集上线资讯配图">
+          <div class="news-body">
+            <span class="date">2026-11-25</span>
+            <h3>《内内》第 12 集上线，阳台特写成整季讨论焦点</h3>
+            <p>本集 06:42 的害羞草闭合镜头在社交平台被反复截取，社区当日新增 37 条位点笔记。</p>
+          </div>
+        </article>
+        <article class="news-item">
+          <img src="https://picsum.photos/seed/nene-news-vote/600/400" width="600" height="400" loading="lazy" alt="最自然植入位社区投票结果配图">
+          <div class="news-body">
+            <span class="date">2026-11-24</span>
+            <h3>“最自然植入位”投票结果：第 12 集以 41% 居首</h3>
+            <p>共 1,862 人参与，第 6 集换盆长镜以 27% 次之，第 11 集片尾口播得票 3% 垫底。</p>
+          </div>
+        </article>
+        <article class="news-item">
+          <img src="https://picsum.photos/seed/nene-news-repot/600/400" width="600" height="400" loading="lazy" alt="官方换盆片段宣传片配图">
+          <div class="news-body">
+            <span class="date">2026-11-24</span>
+            <h3>官方剪出第 6 集换盆 40 秒片段做宣传片</h3>
+            <p>配文强调“没有一句产品台词”，被解读为对硬广争议的间接回应，评论区讨论集中在取舍标准。</p>
+          </div>
+        </article>
+        <article class="news-item">
+          <img src="https://picsum.photos/seed/nene-news-dp/600/400" width="600" height="400" loading="lazy" alt="摄影指导访谈逆光剪影配图">
+          <div class="news-body">
+            <span class="date">2026-11-15</span>
+            <h3>摄影指导访谈：逆光剪影是说服品牌方的结果</h3>
+            <p>访谈提到品牌方曾要求提亮标识，最终以剪影方案保留画面质感，第 10 集因此进入自然度前三。</p>
+          </div>
+        </article>
+        <article class="news-item">
+          <img src="https://picsum.photos/seed/nene-news-sound/600/400" width="600" height="400" loading="lazy" alt="声音设计拟音分层配图">
+          <div class="news-body">
+            <span class="date">2026-11-09</span>
+            <h3>声音设计笔记公开：叶片拟音是后期单独叠的</h3>
+            <p>第 9 集雨戏里的摩擦音并非现场收音，音量压得很低，目的是让观众“听见”植物存在。</p>
+          </div>
+        </article>
+        <article class="news-item">
+          <img src="https://picsum.photos/seed/nene-news-script/600/400" width="600" height="400" loading="lazy" alt="台词本改写对照配图">
+          <div class="news-body">
+            <span class="date">2026-11-02</span>
+            <h3>第 5 集台词本改写 11 字，社区开始整理追加式改写清单</h3>
+            <p>比对稿流出后，观众自发整理同类改写模式，目前站内已收录 14 组对照。</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 10 相关推荐 -->
+    <section class="section" id="related">
+      <div class="section-head">
+        <h2><span class="num">10</span>延伸方向</h2>
+        <span class="sub">8 个标签索引</span>
+      </div>
+      <div class="panel">
+        <div class="rel-tags">
+          <a href="/#picks">植物拟人镜头 <small>18 条</small></a>
+          <a href="/#deep">软性台词改写模式 <small>14 组</small></a>
+          <a href="/#picks">跨集道具线索 <small>9 条</small></a>
+          <a href="/#news">短剧逆光布光 <small>11 篇</small></a>
+          <a href="/#deep">叶片拟音分层 <small>7 条</small></a>
+          <a href="/#faq">遮住测试方法 <small>入门</small></a>
+          <a href="/#comments">自然度争议复盘 <small>讨论</small></a>
+          <a href="/#updates">围读本流出记录 <small>6 份</small></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11 热门榜单 -->
+    <section class="section" id="rank">
+      <div class="section-head">
+        <h2><span class="num">11</span>本月自然度榜单</h2>
+        <span class="sub">8 条 · 11-25 刷新</span>
+      </div>
+      <div class="panel">
+        <ol class="rank-list">
+          <li><span class="rank-no">1</span><span class="r-name">阳台害羞草特写<small>第 12 集 · 叙事型</small></span><span class="r-val">9.4</span></li>
+          <li><span class="rank-no">2</span><span class="r-name">害羞草闭合即兴<small>第 3 集花絮 · 叙事型</small></span><span class="r-val">8.9</span></li>
+          <li><span class="rank-no">3</span><span class="r-name">换盆转折长镜<small>第 6 集 · 叙事型</small></span><span class="r-val">8.8</span></li>
+          <li><span class="rank-no">4</span><span class="r-name">首次登场伏笔<small>第 1 集 · 道具型</small></span><span class="r-val">8.6</span></li>
+          <li><span class="rank-no">5</span><span class="r-name">花盆传递对手戏<small>第 7 集 · 道具型</small></span><span class="r-val">8.4</span></li>
+          <li><span class="rank-no">6</span><span class="r-name">窗台逆光构图<small>第 10 集 · 道具型</small></span><span class="r-val">8.2</span></li>
+          <li><span class="rank-no">7</span><span class="r-name">浇水台词改写<small>第 5 集 · 道具型</small></span><span class="r-val">7.8</span></li>
+          <li><span class="rank-no">8</span><span class="r-name">花盆标签露出<small>第 8 集 · 露出型</small></span><span class="r-val">6.1</span></li>
+        </ol>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 右：辅助栏 -->
+  <aside class="side-col" aria-label="辅助信息">
+
+    <div class="side-module">
+      <h3>热榜 · 今日点击</h3>
+      <ol class="side-hot">
+        <li><span class="n">1</span><a href="/#picks">阳台害羞草特写 <small>第 12 集</small></a></li>
+        <li><span class="n">2</span><a href="/#picks">害羞草闭合即兴 <small>花絮</small></a></li>
+        <li><span class="n">3</span><a href="/#deep">台词本 11 字改动 <small>第 5 集</small></a></li>
+        <li><span class="n">4</span><a href="/#picks">换盆 40 秒长镜 <small>第 6 集</small></a></li>
+        <li><span class="n">5</span><a href="/#picks">花盆标签 2.3 秒 <small>第 8 集</small></a></li>
+        <li><span class="n">6</span><a href="/#deep">遮住测试怎么用 <small>方法</small></a></li>
+      </ol>
+      <p class="side-note">榜单按 11-25 当日站内点击排序，每小时刷新一次，仅统计完整阅读条目页的行为。</p>
+    </div>
+
+    <div class="side-module">
+      <h3>植入线时间线</h3>
+      <ul class="timeline">
+        <li><b>第 1 集 · 纸箱露角</b><time>2026-10-21 建档</time></li>
+        <li><b>第 2 集 · 邻居借走</b><time>2026-10-24 建档</time></li>
+        <li><b>第 6 集 · 换盆转折</b><time>2026-10-27 建档</time></li>
+        <li><b>第 8 集 · 标签争议</b><time>2026-11-21 复评</time></li>
+        <li><b>第 12 集 · 阳台特写</b><time>2026-11-25 入库</time></li>
+      </ul>
+    </div>
+
+    <div class="side-module">
+      <h3>创作者证言</h3>
+      <div class="quote-card" style="border:0;padding:0;background:transparent">
+        <q>“我们一开始就没打算让花盆说话，只想让它在该出现的时候出现。第 12 集那次闭合是风吹的，不是我们设计的，但剪辑把它留下来了。”</q>
+        <p class="q-by">—— 剪辑组访谈摘录，2026-11-15</p>
+      </div>
+    </div>
+
+    <div class="side-module">
+      <h3>可信度分层</h3>
+      <ul class="side-hot">
+        <li><span class="n">A</span><a href="/#deep">围读本对照 <small>原件截图可查</small></a></li>
+        <li><span class="n">B</span><a href="/#news">主创访谈 <small>公开渠道</small></a></li>
+        <li><span class="n">C</span><a href="/#comments">社区观察 <small>多人复评</small></a></li>
+        <li><span class="n">D</span><a href="/#comments">单条弹幕推断 <small>待核实</small></a></li>
+      </ul>
+      <p class="side-note">分层仅表示证据类型，不代表结论对错。D 层内容不进入正式评分。</p>
+    </div>
+
+  </aside>
+</div>
+
+<!-- 页尾 -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <div class="brand" style="margin-bottom:12px">
+        <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
+          <rect x="1" y="1" width="38" height="38" rx="11" fill="#a8d94a"/>
+          <path d="M20 30c-6.4 0-11-4.3-11-9.6 0-4.6 3.4-8.4 8-9.3v-2.4a1 1 0 0 1 2 0v2.4c4.6.9 8 4.7 8 9.3C31 25.7 26.4 30 20 30Z" fill="#123b2a"/>
+          <circle cx="20" cy="12" r="2" fill="#c96f4a"/>
+        </svg>
+        <span class="brand-text">
+          <strong>内内植入害羞草</strong>
+          <small>PLANTING ARCHIVE</small>
+        </span>
+      </div>
+      <p>围绕《内内》短剧害羞草植入线做长期建档与拆解：分集位点、台词本比对、声音与摄影取舍、社区判读。</p>
+      <p>内容由编辑与社区共同维护，条目更新日期以站内标注为准。</p>
+    </div>
+    <div>
+      <h4>频道</h4>
+      <ul>
+        <li><a href="/#overview">领域概览</a></li>
+        <li><a href="/#picks">精选条目</a></li>
+        <li><a href="/#updates">更新动态</a></li>
+        <li><a href="/#categories">分类入口</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>阅读</h4>
+      <ul>
+        <li><a href="/#deep">深度解析</a></li>
+        <li><a href="/#guide">观看指南</a></li>
+        <li><a href="/#faq">常见问答</a></li>
+        <li><a href="/#rank">热门榜单</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>社区</h4>
+      <ul>
+        <li><a href="/#comments">用户评论</a></li>
+        <li><a href="/#news">相关资讯</a></li>
+        <li><a href="/#related">延伸方向</a></li>
+        <li><a href="/#updates">追更清单</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 内内植入害羞草 · 内容归档站</span>
+    <span>站内评分与位点标注为社区复评结果，非官方数据</span>
+  </div>
+</footer>
+
+<script>
+(function () {
+  /* 频道菜单（移动端） */
+  var toggle = document.getElementById('menuToggle');
+  var nav = document.getElementById('siteNav');
+  if (toggle && nav) {
+    toggle.addEventListener('click', function () {
+      var open = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    nav.addEventListener('click', function (e) {
+      if (e.target.tagName === 'A' && nav.classList.contains('open')) {
+        nav.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
+
+  /* 本地内容查找：筛选精选卡片 */
+  var input = document.getElementById('searchInput');
+  var grid = document.getElementById('pickGrid');
+  var noResult = document.getElementById('noResult');
+  if (input && grid && noResult) {
+    var cards = Array.prototype.slice.call(grid.querySelectorAll('.card'));
+    input.addEventListener('input', function () {
+      var q = input.value.trim().toLowerCase();
+      var shown = 0;
+      cards.forEach(function (card) {
+        var text = (card.textContent + ' ' + (card.getAttribute('data-key') || '')).toLowerCase();
+        var hit = !q || text.indexOf(q) !== -1;
+        card.style.display = hit ? '' : 'none';
+        if (hit) shown++;
+      });
+      noResult.classList.toggle('show', shown === 0);
+    });
+  }
+
+  /* 频道高亮 */
+  var railLinks = document.querySelectorAll('.channel-rail a');
+  railLinks.forEach(function (link) {
+    link.addEventListener('click', function () {
+      railLinks.forEach(function (l) { l.classList.remove('on'); });
+      link.classList.add('on');
+    });
+  });
+})();
+</script>
+</body>
+  </html>
